@@ -1,6 +1,7 @@
 .body {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--main-background-color);
+  color: var(--main-text-color);
 }
 
 :root {
@@ -12,13 +13,16 @@
   --main-text-color: #434455;
   --main-background-color: #ffffff;
   --footer-text-color: #f4f4fd;
+  --logo-color: #4d5ae5;
+  --span-footer-logo: #f4f4fd;
 }
 
 .header {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
+  color: var(--text-header);
 }
 .header-nav {
   color: var(--text-header);
@@ -27,13 +31,14 @@
   font-family: Raleway;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 0.03;
-  color: var(--text-header);
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+  text-transform: uppercase;
 }
 
 .logo span {
-  color: #4d5ae5;
+  color: var(--text-header);
 }
 
 .link {
@@ -45,20 +50,27 @@
 a:hover {
   color: #404bbf;
 }
+a:focus {
+  color: #404bbf;
+}
 
 .address-choise {
   color: var(--main-text-color);
+  font-style: normal;
+  letter-spacing: 0.02em;
 }
 
 ------/***HERO PART***/-------
 .main-hero {
-  background-color: var(--hero-background-color);
+  background-color: var(--footer-background-color);
 }
+
 .hero {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
+  text-align: center;
   color: #ffffff;
   background-color: var(--hero-background-color);
 }
@@ -70,34 +82,46 @@ a:hover {
   font-size: 16px;
   line-height: 1.5;
   border: none;
+  letter-spacing: 0.04em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 .button-hero:hover {
   background-color: #404bbf;
 }
+.button-hero:focus {
+  color: #404bbf;
+}
 
-/*---TEXT--*/
------------------ .subtitle {
+.subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02;
-  color: #2e2f42;
+  letter-spacing: 0.02em;
+  color: var(--text-header);
 }
 .text {
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
 
-----/**WHAT WE DO**/----
+.team-section {
+  background-color: #f4f4fd;
+}
 
 .second-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
-  letter-spacing: 0.02;
-  color: #2e2f42;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--text-header);
+}
+.team-line {
+  background-color: var(--main-background-color);
 }
 -------/***FOOTER**/-----------------------
 
@@ -106,35 +130,38 @@ a:hover {
 }
 
 .footer-logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 0.03;
-  color: var(--footer-text-color);
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-color);
   background-color: var(--footer-background-color);
 }
 
 .footer-logo span {
-  color: #4d5ae5;
+  color: var(--span-footer-logo);
 }
 
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
   color: var(--footer-text-color);
   background-color: var(--footer-background-color);
 }
 .portfolio-btn {
-  font-family: inherit;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   border: none;
   background-color: var(--button-portfolio-background-color);
   color: var(--button-portfolio-text-color);
+  cursor: pointer;
 }
 .portfolio-btn:hover {
   background-color: #404bbf;
