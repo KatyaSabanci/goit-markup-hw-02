@@ -27,8 +27,12 @@
 .header-nav {
   color: var(--text-header);
 }
+.only {
+  font-weight: 800;
+  color: var(--text-header);
+}
 .logo {
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -54,15 +58,17 @@ a:focus {
   color: #404bbf;
 }
 
+.address {
+  font-style: normal;
+}
 .address-choise {
   color: var(--main-text-color);
   font-style: normal;
   letter-spacing: 0.02em;
 }
 
-------/***HERO PART***/-------
 .main-hero {
-  background-color: var(--footer-background-color);
+  background-color: var(--hero-background-color);
 }
 
 .hero {
@@ -72,7 +78,6 @@ a:focus {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
-  background-color: var(--hero-background-color);
 }
 
 .button-hero {
@@ -86,11 +91,9 @@ a:focus {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
-.button-hero:hover {
+.button-hero:hover,
+:focus {
   background-color: #404bbf;
-}
-.button-hero:focus {
-  color: #404bbf;
 }
 
 .subtitle {
@@ -123,7 +126,6 @@ a:focus {
 .team-line {
   background-color: var(--main-background-color);
 }
--------/***FOOTER**/-----------------------
 
 .footer {
   background-color: var(--footer-background-color);
@@ -137,7 +139,6 @@ a:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
-  background-color: var(--footer-background-color);
 }
 
 .footer-logo span {
@@ -149,7 +150,6 @@ a:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
-  background-color: var(--footer-background-color);
 }
 .portfolio-btn {
   font-family: 'Roboto', sans-serif;
@@ -166,4 +166,15 @@ a:focus {
 .portfolio-btn:hover {
   background-color: #404bbf;
   color: #ffffff;
+}
+.pointer-btn:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+.subtitle-portfolio {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--text-header);
 }
