@@ -5,7 +5,7 @@
 }
 
 :root {
-  --text-header: #2e2f42;
+  --header-color: #2e2f42;
   --hero-background-color: #2e2f42;
   --footer-background-color: #2e2f42;
   --button-portfolio-text-color: #4d5ae5;
@@ -23,10 +23,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-header);
-}
-.header-list {
-  color: var(--text-header);
+  color: var(--header-color);
 }
 
 .logo {
@@ -40,7 +37,7 @@
 }
 
 .logo span {
-  color: var(--text-header);
+  color: var(--header-color);
 }
 
 .link {
@@ -119,7 +116,7 @@ a:focus {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
-  color: var(--text-header);
+  color: var(--header-color);
 }
 .team-line {
   background-color: var(--main-background-color);
@@ -174,5 +171,5 @@ a:focus {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--text-header);
+  color: var(--header-color);
 }
